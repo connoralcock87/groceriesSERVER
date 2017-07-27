@@ -3,9 +3,9 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const express = require('express');
 const app = express();
-const knex = require('../groceryProject_SERVER/db/knex.js');
+const knex = require('./groceryProject_SERVER/db/knex.js');
 // const route = app('/.routes.js');
-// const port = process.env.PORT || 3050;
+const port = process.env.PORT || 3050;
 
 app.use(cors());
 
@@ -28,4 +28,4 @@ app.get('/', function (req, res) {
 //   console.log("Listening on " + port);
 // });
 
-app.listen(process.env.PORT || 3050);
+app.listen(port)
