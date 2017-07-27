@@ -7,6 +7,11 @@ const knex = require('../groceryProject_SERVER/db/knex.js');
 // const route = app('/.routes.js');
 const port = process.env.PORT || 3050;
 
+app.use(cors());
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+
 app.get('/', function (req, res) {
   knex('grocery')
     .then(function (groceries) {
