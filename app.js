@@ -5,7 +5,7 @@ const express = require('express');
 const app = express();
 const knex = require('../groceryProject_SERVER/db/knex.js');
 // const route = app('/.routes.js');
-const port = process.env.PORT || 3050;
+const port = (process.env.PORT || 3050);
 
 app.use(cors());
 
