@@ -2,9 +2,7 @@
 
 const express = require('express');
 const app = express();
-const router = app.listen(process.env.PORT || 3050, function () {
-  console.log("Listening on port");
-});
+const router = express.Router()
 
 
 // router.use('/', express.static('./index'));
