@@ -24,6 +24,8 @@ app.get('/', function (req, res) {
 //   console.log(groceries);
 // });
 
-app.listen(port, function () {
-  console.log("Listening on " + port);
-});
+// app.listen(port, function () {
+//   console.log("Listening on " + port);
+// });
+
+app.listen(port)
